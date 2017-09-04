@@ -1,0 +1,17 @@
+[
+    {
+        "order": "0",
+        "fullName": "Paul M. Johnson",
+        "id": "paul-m-johnson",
+        "photo": "img/consultants/paul-m-johnson.jpg",
+        "summary": "Results-driven and detail-oriented Senior Tecnical Engineer..."
+    },
+
+    {
+        "order": "1",
+        "fullName": "Jerry Hortimer",
+        "id": "jerry-hortimer",
+        "photo": "img/consultants/jerry-hortimer.jpg",
+        "summary": "Thrives in a chaotic environment..."
+    }
+]
