@@ -1,0 +1,54 @@
+{
+    "clientList": [
+        {
+            "name": "Target",
+            "startDate": "2016-01-01",
+            "endDate": "2016-08-01"
+        },
+
+        {
+            "name": "Piper Jaffrey",
+            "startDate": "2016-09-01",
+            "endDate": "2016-12-01"
+        }
+    ],
+
+    "education": [
+        {
+            "educationType": "College",
+            "name": "University of Madrid"
+        },
+
+        {
+            "educationType": "Certification",
+            "name": "CompTIA Security+"
+        }
+    ],
+
+    "skills": [
+        {
+            "skillType": "Languages",
+            "skillValue": "Python"
+        }
+    ],
+
+    "social": [
+        {
+            "socialNetwork": "LinkedIn",
+            "link": "http://linkedin/in/jhortimer"
+        },
+
+        {
+            "socialNetwork": "Twitter",
+            "link": "http://twitter.com/jhortimer"
+        }
+    ],
+
+    "fullName": "Jerry Hortimer",
+
+    "id": "jerry-hortimer",
+
+    "photo": "img/consultants/jerry-hortimer.jpg",
+
+    "summary": "Thrives in a chaotic environment..."
+}

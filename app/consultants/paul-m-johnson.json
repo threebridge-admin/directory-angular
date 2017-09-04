@@ -1,0 +1,38 @@
+{
+    "clientList": [
+        {
+            "name": "3M",
+            "startDate": "2017-01-01",
+            "endDate": "2017-08-01"
+        }
+    ],
+
+    "education": [
+        {
+            "educationType": "College",
+            "name": "University of Minnesota - Twin Cities"
+        }
+    ],
+
+    "skills": [
+        {
+            "skillType": "Languages",
+            "skillValue": "Groovy"
+        }
+    ],
+
+    "social": [
+        {
+            "socialNetwork": "LinkedIn",
+            "link": "http://linkedin/in/mjohnson"
+        }
+    ],
+
+    "fullName": "Paul M. Johnson",
+
+    "id": "paul-m-johnson",
+
+    "photo": "img/consultants/paul-m-johnson.jpg",
+
+    "summary": "Results-driven and detail-oriented Senior Tecnical Engineer..."
+}
