@@ -2,9 +2,19 @@
 
 <p>{{$ctrl.consultant.summary}}</p>
 
-<div>
-    Client List: {{$ctrl.consultant.clientList}}
-</div>
+<h2>Client</h2>
+<table class="table">
+	<tr>
+		<th>Client</th>
+		<th>Start Date</th>
+		<th>End Date</th>
+	</tr>
+	<tr ng-repeat="client in $ctrl.consultant.clientList">
+		<td>{{client.name}}</td>
+		<td>{{client.startDate}}</td>
+		<td>{{client.endDate}}</td>
+	</tr>
+</table>
 
 <div>
     Education: {{$ctrl.consultant.education}}
