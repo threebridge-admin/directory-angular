@@ -1,19 +1,71 @@
-<h1>{{$ctrl.consultant.fullName}}</h1>
 
-<p>{{$ctrl.consultant.summary}}</p>
-
-<div>
-    Client List: {{$ctrl.consultant.clientList}}
+<div class="container">
+	<div class="row">
+		<div class="col-xs-6">
+			<h1 style="border: 0px;">{{$ctrl.consultant.fullName}}</h1>
+		</div>
+		<div class="col-xs-6">
+			<ul class="pull-right" style="list-style: none;">
+				<li ng-repeat="social in $ctrl.consultant.social">
+					<span><b>{{social.socialNetwork}}: </b><a href="{{social.link}}">{{social.link}}</a></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+            <img ng-src="{{$ctrl.consultant.photo}}" alt="{{$ctrl.consultant.fullName}}" class="img-thumbnail" width="256" height="256" />
+		</div>
+		<div class="col-xs-6">
+			<div ng-repeat="education in $ctrl.consultant.education">
+				<div ng-if="education.educationType == 'College'">
+					<h3>{{education.name}}</h3>
+				</div>
+			</div>
+		</div>		
+	</div>
 </div>
+<br/>
+<p><b>Summary: </b>{{$ctrl.consultant.summary}}</p>
 
-<div>
-    Education: {{$ctrl.consultant.education}}
-</div>
-
-<div>
-    Skills: {{$ctrl.consultant.skills}}
-</div>
-
-<div>
-    Social Media: {{$ctrl.consultant.social}}
+<table class="table table-striped">
+	<tr>
+		<th>
+		<th class="text-center">Previous Clients</th>
+		<th>
+	</tr>
+	<tr>
+		<th>Client</th>
+		<th>Start Date</th>
+		<th>End Date</th>
+	</tr>
+	<tr ng-repeat="client in $ctrl.consultant.clientList">
+		<td>{{client.name}}</td>
+		<td>{{client.startDate}}</td>
+		<td>{{client.endDate}}</td>
+	</tr>
+</table>
+<br/>
+<br/>
+<table class="table table-striped">
+	<tr>
+		<th class="text-center">Technology Experience</th>
+	</tr>
+	<tr ng-repeat="skill in $ctrl.consultant.skills">
+		<td class="text-center"><b>{{skill.skillType}}</b>: {{skill.skillValue}}</td>		
+	</tr>
+</table>
+<br/>
+<br/>
+<div ng-repeat="education in $ctrl.consultant.education">
+	<div ng-if="education.educationType == 'Certification'">
+		<table class="table table-striped">
+			<tr>
+				<th class="text-center">Certifications</th>
+			</tr>
+			<tr>
+				<td class="text-center">{{education.name}}</td>
+			</tr>
+		</table>
+	</div>
 </div>
